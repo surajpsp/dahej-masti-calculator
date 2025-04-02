@@ -1,10 +1,9 @@
-
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { toast } from "sonner";
 import { DahejFormData } from "@/types";
 import { calculateDahej, formatAmount, getFunMessage } from "@/utils/calculationUtils";
-import { Copy, Facebook, Share2, WhatsApp } from "lucide-react";
+import { Copy, Facebook, MessageCircle, Share2 } from "lucide-react";
 import {
   Card,
   CardContent,
@@ -100,7 +99,7 @@ const DahejResult: React.FC = () => {
               className="flex items-center justify-center space-x-2 border-dahej-green" 
               onClick={() => handleShare("whatsapp")}
             >
-              <WhatsApp size={16} className="text-green-600" />
+              <MessageCircle size={16} className="text-green-600" />
               <span>WhatsApp</span>
             </Button>
             
