@@ -7,4 +7,8 @@ export type DahejFormData = {
   monthlyIncome: number;
   houseCount: number;
   landCount: number;
+  carCount: number;
+  bikeCount: number;
+  hasAC: boolean;
+  hasFurniture: boolean;
 };
